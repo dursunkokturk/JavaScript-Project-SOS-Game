@@ -78,6 +78,11 @@ body {
   margin-left: 8px;
 }
 
+.newGameAndScoreReset {
+  display: flex;
+  margin-inline: 55px;
+}
+
 .container .resetButton {
   display: block;
   margin: 0 auto;
