@@ -122,11 +122,11 @@ function checkWinner() {
     saveScores();
 
     scoreDrawResult.innerText = scoreDraw;
-    
+
     alert("X ve O Beraberlik Puani : " + scoreDraw);
     console.log("X ve O Beraberlik Puani : " + scoreDraw);
     console.log("X ve O Beraberlik Puani : " + scoreOResult.value.innerText);
-    
+
     alert("Oyun berabere!");
     gameActive = false;
   }
@@ -152,4 +152,24 @@ function resetGame() {
   gameActive = true;
   currentPlayer = "X";
   saveScores();
+}
+
+function resetScore() {
+  // Skorları Sifirliyoruz
+  scoreX = 0;
+  scoreO = 0;
+  scoreDraw = 0;
+
+  // DOM Uzerinden index.html Dosyasini Guncelliyoruz
+  scoreXResult.innerText = 0;
+  scoreOResult.innerText = 0;
+  scoreDrawResult.innerText = 0;
+
+  // 3- LocalStorage'ı güncelle
+  saveScores();
+
+  // Alternatif olarak tamamen silmek istersen:
+  // localStorage.removeItem("sosScores");
+
+  alert("Skorlar sıfırlandı!");
 }
