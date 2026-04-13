@@ -80,7 +80,6 @@ body {
 
 .newGameAndScoreReset {
   display: flex;
-  margin-inline: 55px;
 }
 
 .container .resetButton {
