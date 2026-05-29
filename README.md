@@ -95,3 +95,95 @@ open index.html
 - Font: system-ui, Arial, Helvetica
 - Izgara: CSS Grid ile 3x3, her kare 100x100px
 - Kart Efekti: Hover'da scale(1.05) ve translateY(-2px) animasyonları
+
+
+
+
+# EN
+# SOS Game (Tic-Tac-Toe)
+A two-player, browser-based classic X-O game. Scores are saved to localStorage and the scoreboard persists even after page refreshes.
+
+## Live Preview
+[Project Preview](https://dursunkokturk.github.io/JavaScript-Project-SOS-Game/)
+
+## Features
+
+- Two-Player Mode — X and O players take turns clicking on the 3x3 grid
+- Win Detection — 8 possible combinations are checked; the winner is announced via alert
+- Draw Detection — A draw is declared when all squares are filled with no winner
+- Score Tracking — X, O, and draw scores update in real time on screen
+- localStorage Persistence — Scores are saved to the browser and survive page refreshes
+- Play Again — Clears the board and returns the turn to X; scores are preserved
+- Clear Scores — Resets all points and updates localStorage
+- Hover Animations — Scale and color effects on squares and buttons
+
+## How to Play
+
+- The X player clicks on an empty square
+- The turn passes to the O player
+- The player who gets three matching symbols in a row (horizontal, vertical, or diagonal) wins
+- If all squares are filled with no winner, the game ends in a draw
+- Press Play Again for a new game, or Clear Scores to reset the scoreboard
+
+## Technologies
+
+| Technology | Description                                |
+| ---------- |--------------------------------------------|
+| HTML5      | Semantic page structure                    |
+| CSS3       | Grid, Flexbox, transition animations       |
+| JavaScript | Game logic, DOM manipulation, localStorage |
+
+## Project Structure
+sos-game/ <br>
+├── index.html <br>
+└── assets/ <br>
+    ├── css/ <br>
+    │   └── style.css <br>
+    └── js/ <br>
+        └── sos-game.js <br>
+
+## Application Flow
+Page Loads <br>
+    │ <br>
+    ▼ <br>
+Does "sosScores" exist in localStorage? <br>
+    │ <br>
+    ├── Yes  → Scores are loaded from localStorage <br>
+    │ <br>
+    └── No   → Scores set to 0 and written to localStorage <br>
+                       │ <br>
+                       ▼ <br>
+               Game Starts (currentPlayer = "X") <br>
+                       │ <br>
+                       ▼
+               Square Clicked → X/O written → Win/Draw check <br>
+                       │ <br>
+              ┌────────┴────────┐ <br>
+           Winner             Draw <br>
+           Score increases    Draw score increases <br>
+           Game stops         Game stops <br>
+
+## Installation
+The project requires no dependencies.
+bash# Clone the repo
+git clone https://github.com/username/sos-game.git
+
+### Navigate to the project folder
+cd sos-game
+
+### Open index.html in the browser
+open index.html
+
+#### Note: sos-game.js is loaded with defer and runs only after the DOM is fully ready.
+
+## Design Details
+- Color Palette
+  - #2563eb — Blue (buttons, X player color)
+  - #ef4444 — Red (O player color)
+  - #e5e7eb — Light gray (square background)
+  - #f3f4f6 — Very light gray (page background)
+  - #1f2937 — Dark (heading text)
+
+- Font: system-ui, Arial, Helvetica
+- Grid: 3×3 with CSS Grid, each square 100×100px
+- Card Effect: scale(1.05) and translateY(-2px) animations on hover
