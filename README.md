@@ -4,7 +4,7 @@
 
 ## Canlı Önizleme
 
-[Proje Önizlemesi].(https://dursunkokturk.github.io/JavaScript-Project-SOS-Game/)
+[Proje Önizlemesi](https://dursunkokturk.github.io/JavaScript-Project-SOS-Game/)
 
 
 ## Özellikler
