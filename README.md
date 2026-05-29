@@ -6,6 +6,7 @@
 
 [Proje Önizlemesi](https://dursunkokturk.github.io/JavaScript-Project-SOS-Game/)
 
+![Proje Görseli](assets/img/javascript-project-sos-game.png)
 
 ## Özellikler
 
