@@ -172,7 +172,7 @@ git clone https://github.com/dursunkokturk/JavaScript-Project-SOS-Game.git
 cd JavaScript-Project-SOS-Game
 
 ### Open index.html in the browser
-Open it by double-clicking inside the project folder, or
+Open it by double-clicking inside the project folder, or <br>
 open the project in VSCode, right-click on the index.html file, and select "Open With Live Server" to launch it in the browser.
 
 #### Note: sos-game.js is loaded with defer and runs only after the DOM is fully ready.
