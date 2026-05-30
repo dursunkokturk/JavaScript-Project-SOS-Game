@@ -19,7 +19,6 @@
 - Skorları Sil — Tüm puanlar sıfırlanır ve localStorage güncellenir
 - Hover Animasyonları — Kare ve buton üzerine gelindiğinde ölçek ve renk efektleri
 
-
 ## Nasıl Oynanır?
 
 - X oyuncusu boş bir kareye tıklar
@@ -28,7 +27,6 @@
 - Tüm kareler dolup kazanan çıkmazsa oyun berabere biter
 - Yeni oyun için Yeniden Oyna, skorları temizlemek için Skorları Sil butonuna basılır
 
-
 ## Teknolojiler
 
 | Teknoloji  | Açıklama                                      |
@@ -36,7 +34,6 @@
 | HTML5      | Semantik sayfa yapısı                         |
 | CSS3       | Grid, Flexbox, transition animasyonları       |
 | JavaScript | Oyun mantığı, DOM manipülasyonu, localStorage |
-
 
 ### Proje Yapısı
 sos-game/ <br>
@@ -69,18 +66,18 @@ localStorage'da "sosScores" var mı? <br>
            Oyun durur         Oyun durur <br>
 
 ## Kurulum
-Proje herhangi bir bağımlılık gerektirmez.
-bash# Repoyu klonlayın
-git clone https://github.com/kullanici-adi/sos-game.git
+Proje herhangi bir bağımlılık gerektirmez. <br>
+bash# Repoyu klonlayın <br>
+git clone https://github.com/dursunkokturk/JavaScript-Project-SOS-Game.git
 
 ### Proje klasörüne girin
-cd sos-game
+cd JavaScript-Project-SOS-Game
 
 ### index.html dosyasını tarayıcıda açın
-open index.html
+Proje klasörü içinde çift tıklayarak yada <br>
+Projeyi VSCode içinde açıp index.html dosyasının üzerinde sağ tıkladıktan sonra "Open With Live Server" tıklayarak projeyi browser'da açıyoruz.
 
 #### Not: sos-game.js dosyası defer ile yüklenir; DOM tamamen hazır olduktan sonra çalışır.
-
 
 ## Tasarım Detayları
 
@@ -106,6 +103,8 @@ A two-player, browser-based classic X-O game. Scores are saved to localStorage a
 
 ## Live Preview
 [Project Preview](https://dursunkokturk.github.io/JavaScript-Project-SOS-Game/)
+
+![Proje Görseli](assets/img/javascript-project-sos-game.png)
 
 ## Features
 
@@ -165,15 +164,16 @@ Does "sosScores" exist in localStorage? <br>
            Game stops         Game stops <br>
 
 ## Installation
-The project requires no dependencies.
-bash# Clone the repo
-git clone https://github.com/username/sos-game.git
+The project requires no dependencies. <br>
+bash# Clone the repo <br>
+git clone https://github.com/dursunkokturk/JavaScript-Project-SOS-Game.git
 
 ### Navigate to the project folder
-cd sos-game
+cd JavaScript-Project-SOS-Game
 
 ### Open index.html in the browser
-open index.html
+Open it by double-clicking inside the project folder, or
+open the project in VSCode, right-click on the index.html file, and select "Open With Live Server" to launch it in the browser.
 
 #### Note: sos-game.js is loaded with defer and runs only after the DOM is fully ready.
 
